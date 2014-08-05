@@ -9,10 +9,19 @@ For OSX/Linux, use gpasm from gputils and pk2cmd (tarball: <http://ww1.microchip
 Compilation
 ========
 
-avoidBlock
---------
-
-    gpasm -p p16f84a avoidBlock.asm
-    pk2cmd -PPIC16F84A -F avoidBlock.hex -M -R
+    gpasm -p p16f84a foo.asm
+    pk2cmd -PPIC16F84A -M -R -F foo.hex
 
 DIP1 on to start.
+
+
+avoidBlock
+========
+
+Avoid obstacles using IR LED.
+
+
+backNForth
+========
+
+Only move back and forth.
